@@ -2,6 +2,7 @@
 optimizer_runs = 1000000
 
 [rpc_endpoints]
+tokio = "${RPC_URL_ENGRAM}"
 mainnet = "${RPC_URL_MAINNET}"
 polygon = "${RPC_URL_POLYGON}"
 bsc = "${RPC_URL_BSC}"
@@ -38,7 +39,8 @@ bsc-testnet = "${RPC_URL_BSC_TESTNET}"
 scroll-alpha = "${RPC_URL_SCROLL_ALPHA}"
 
 [etherscan]
-mainnet = { key = "${ETHERSCAN_KEY}" }
+tokio = { key = "", url = "https://tokioscan-v2.engram.tech/api" }
+mainnet = { key = "${ETHERSCAN_KEY}", url = "https://tokioswift.engram.tech/api" }
 polygon = { key = "${POLYGONSCAN_KEY}", url = "https://api.polygonscan.com/api" }
 bsc = { key = "${BSCSCAN_KEY}", url = "https://api.bscscan.com/api" }
 gnosis = { key = "${GNOSISBSCOUT_KEY}", url = "https://blockscout.com/poa/xdai/api" }
